@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:screenOrientation="portrait" >
+
+    <SeekBar
+        android:id="@+id/Color_RED"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        />
+
+    <SeekBar
+        android:id="@+id/Color_GREEN"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Color_RED"
+        android:layout_margin="10dp"
+        />
+
+    <SeekBar
+        android:id="@+id/Color_BLUE"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Color_GREEN"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/T_RED"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Color_BLUE"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/T_GREEN"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/T_RED"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/T_BLUE"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/T_GREEN"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:id="@+id/BACK"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/T_BLUE"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/AUTHOR"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BACK"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Készítette: Verebes Zoltán"
+        />
+
+</RelativeLayout>
